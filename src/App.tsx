@@ -1,20 +1,10 @@
 import './App.css'
-import ProductCard from "./components/ProductCard";
-import {products} from "../data/products.ts";
+import Products from "./components/Products";
 
 function App() {
     return (
         <div className="product-grid">
-            {products.map(product => (
-                <ProductCard
-                    key={product.id}
-                    title={product.title}
-                    origin={product.origin}
-                    price={product.price}
-                    currency={product.currency}
-                    imageUrl={product.imageUrl}
-                />
-            ))}
+            <Products />
         </div>
     )
 }

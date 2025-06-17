@@ -1,6 +1,6 @@
+import type {FC} from "react";
 import styles from "../../styles/ProductCard.module.css";
 import type {ProductCardProps} from "../../../data/products.ts";
-import type {FC} from "react";
 
 const ProductCard: FC<ProductCardProps> = ({ title, origin, price, currency, imageUrl }) => {
     const formattedPrice = new Intl.NumberFormat('ru-RU', {
