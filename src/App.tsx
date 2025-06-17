@@ -5,9 +5,9 @@ import {products} from "../data/products.ts";
 function App() {
     return (
         <div className="product-grid">
-            {products.map((product, index) => (
+            {products.map(product => (
                 <ProductCard
-                    key={index}
+                    key={product.id}
                     title={product.title}
                     origin={product.origin}
                     price={product.price}
